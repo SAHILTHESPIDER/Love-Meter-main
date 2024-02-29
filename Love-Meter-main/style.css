@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,700;1,100;1,700&family=IBM+Plex+Serif:ital,wght@1,300&family=Open+Sans&family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,pink,lightskyblue);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
+.main-container{
+    margin: 0 auto;
+    margin-top: 10rem;
+    /* border: 2px solid red; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    background:#fcfcfc;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.67);
+    
+}
+
+.container{
+    display: flex;
+    /* justify-content: column; */
+   flex-direction: column;
+  font-size: 2rem;
+  align-items: center;
+  /* border: 2px solid green; */
+  width: 100%;
+
+}
+.header{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto 4rem 2rem;
+    
+}
+
+h1
+{   text-transform:capitalize;
+    color: rgb(255, 8, 156);
+   font-size: 3rem;
+   text-shadow: 1px 1px 2px rgb(0, 0, 0);
+   
+}
+
+
+label{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 8, 156);
+}
+
+
+
+
+.icon{
+    /* width: 3rem; */
+    height: 4rem;
+
+}
+input[type="text"] {
+width: 30rem;
+height: 4rem;
+border-radius:2rem;
+/* color: blue; */
+font-size: 2rem;
+font-weight: 400;
+background-color:rgba(248, 187, 197, 0.522);
+border:.1rem solid rgb(255, 8, 156);
+outline: none;
+padding-left: 2rem;
+margin-top: 1rem;
+}
+
+.btn{
+    color: whitesmoke;
+    background: rgb(255, 8, 156);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    margin: 1rem auto;  
+    padding: .8rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.849);
+    cursor: pointer;
+   
+     
+}
+.mid-img
+{
+ width: 20rem;
+ height: 20rem;  
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+}
+.result h1{
+    font-size: 3rem;
+    margin-top: 3rem;
+    /* text-shadow: 5px black; */
+}
+
+@media(max-width:500px)
+{
+    .main-container{
+        width: 80%;
+
+    }
+    input[type="text"]
+    {
+      width:25rem;  
+      height: 3.2rem;
+      font-size: 1.7rem;
+      margin-top: .5rem;     
+    }   
+    .btn{
+        font-size: 2rem;
+        padding: .5rem 2rem;
+    }
+       
+    .result h1{
+        font-size: 1.7rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+        padding: 0 1rem;
+    }
+    label{
+        font-size: 1.7rem;
+    }
+    .mid-img
+    {
+        height: 15rem;
+        width: 15rem;
+    }
+}
